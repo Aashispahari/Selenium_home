@@ -28,12 +28,6 @@ time.sleep(1)
 message.send_keys("Automation test")
 time.sleep(1)
 
-submit_button.click()
-time.sleep(2)
-
-assert "Pransa" in driver.current_url, "Submission failed"
-print("Submission successfull")
-
 Contact_email.click()
 time.sleep(2)
 
@@ -43,6 +37,15 @@ time.sleep(2)
 
 twitter.click()
 time.sleep(2)
+
+submit_button.click()
+time.sleep(2)
+
+assert "Pransa" in driver.current_url, "Submission failed"
+print("Submission successfull")
+
+
+
 
 
 
