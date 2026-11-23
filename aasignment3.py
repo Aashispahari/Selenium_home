@@ -15,9 +15,9 @@ email = driver.find_element(By.ID, "email")
 message = driver.find_element(By.ID, "message")
 submit_button = driver.find_element(By.XPATH, "//*[@id='contactForm']/button")
 
-# Contact_email = driver.find_element(By.XPATH, "/html/body/div/article/ul/li[1]/a")
-# Linkdin = driver.find_element(By.XPATH, "/html/body/div/article/ul/li[3]/a")
-# twitter = driver.find_element(By.XPATH, "/html/body/div/article/ul/li[4]/a")
+Contact_email = driver.find_element(By.XPATH, "/html/body/div/article/ul/li[1]/a")
+Linkdin = driver.find_element(By.XPATH, "/html/body/div/article/ul/li[3]/a")
+twitter = driver.find_element(By.XPATH, "/html/body/div/article/ul/li[4]/a")
 
 username.send_keys("Pransa")
 time.sleep(1)
@@ -33,15 +33,16 @@ time.sleep(2)
 
 assert "Pransa" in driver.current_url, "Submission failed"
 print("Submission successfull")
-# Contact_email.click()
-# time.sleep(2)
+
+Contact_email.click()
+time.sleep(2)
 
 
-# Linkdin.click()
-# time.sleep(2)
+Linkdin.click()
+time.sleep(2)
 
-# twitter.click()
-# time.sleep(2)
+twitter.click()
+time.sleep(2)
 
 
 
