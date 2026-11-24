@@ -28,8 +28,8 @@ time.sleep(1)
 message.send_keys("Automation test")
 time.sleep(1)
 
-Contact_email.click()
-time.sleep(2)
+# Contact_email.click()
+# time.sleep(2)
 
 
 Linkdin.click()
