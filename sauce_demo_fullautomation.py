@@ -59,6 +59,8 @@ action.send_keys("c")
 action.key_up(Keys.CONTROL).perform
 time.sleep(2)
 
+# action.send_keys(Keys.CONTROL + "a").perform()
+
 action.send_keys(Keys.TAB).perform()
 time.sleep(2)
 
